@@ -1,0 +1,15 @@
+{
+  "name": "team3",
+  "version": "1.0.0",
+  "description": "This is the repository for team 3\r ### 1. Programming Language\r - **Selected**: JavaScript/Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
