@@ -29,10 +29,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install modules
-        run: yarn
-      - name: Run ESLint
-        run: eslint . --ext .js,.jsx,.ts,.tsx
+      - uses: stefanoeb/eslint-action@1.0.2
+        with:
+          files: src/
 
   prettier:
     name: Prettier JavaScript Formatting
@@ -43,7 +42,7 @@ jobs:
         uses: creyD/prettier_action@v4.3
         with:
           # This part is also where you can pass other options, for example:
-          prettier_options: --write **/*.{js}
+          prettier_options: --write ./**/*.{js,html}
 
   presubmit:
     name: Continuous Integration
