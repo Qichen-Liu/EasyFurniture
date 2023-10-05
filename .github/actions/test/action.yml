@@ -12,4 +12,4 @@ runs:
       shell: bash
       run: npm test  # Replace with your test command
 
-    - name: Report Coverage to Coveralls
+    # - name: Report Coverage to Coveralls
