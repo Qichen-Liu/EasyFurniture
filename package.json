@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "hellowworld" : "node src/hellowWorld.js" 
+    "hellowworld" : "node src/helloWorld.js" 
   },
   "author": "",
   "license": "ISC",
