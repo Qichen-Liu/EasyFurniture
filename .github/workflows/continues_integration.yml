@@ -2,10 +2,13 @@ name: Continuous Integration
 run-name: ${{ github.workflow }} run for ${{ github.actor }} in ${{ github.ref_name }}
 
 on:
+  pull_request:
   push:
   workflow_dispatch:
   schedule:
     - cron: "15 2 * * *"
+    branches:
+      - main
 
 defaults:
   run:
@@ -19,6 +22,25 @@ env:
   ENVIRONMENT_TYPE: continuous_integration
 
 jobs:
+
+  eslint:
+    name: Eslint Static Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: stefanoeb/eslint-action@1.0.2
+
+  prettier:
+    name: Prettier JavaScript Formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.3
+        with:
+          # This part is also where you can pass other options, for example:
+          prettier_options: --write **/*.{js}
+
   presubmit:
     name: Continuous Integration
     runs-on: ubuntu-latest
@@ -28,7 +50,9 @@ jobs:
         uses: actions/checkout@v3
       - name: Prepare Environment
         uses: ./.github/actions/prepare
-      - name: Format and Lint Js
-        uses: ./.github/actions/format
       - name: Test Js
         uses: ./.github/actions/test
+  
+
+  
+
