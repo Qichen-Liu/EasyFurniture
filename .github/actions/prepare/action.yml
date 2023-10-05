@@ -1,0 +1,14 @@
+name: Prepare Node.js Environment
+description: Prepares the environment with Node.js and dependencies
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14  # Choose the Node.js version you need
+    - name: Install dependencies
+      run: npm install  # Install project dependencies
+
+    

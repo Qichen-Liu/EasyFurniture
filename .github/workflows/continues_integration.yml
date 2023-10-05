@@ -1,0 +1,35 @@
+name: Continuous Integration
+run-name: ${{ github.workflow }} run for ${{ github.actor }} in ${{ github.ref_name }}
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 2 * * *"
+
+defaults:
+  run:
+    shell: bash
+    working-directory: artitone
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.actor }}-${{ github.ref_name }}
+  cancel-in-progress: true
+
+env:
+  ENVIRONMENT_TYPE: continuous_integration
+
+jobs:
+  presubmit:
+    name: Continuous Integration
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code Locally
+        uses: actions/checkout@v3
+      - name: Prepare Environment
+        uses: ./.github/actions/prepare
+      - name: Format and Lint Js
+        uses: ./.github/actions/format
+      - name: Test Js
+        uses: ./.github/actions/test
