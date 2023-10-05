@@ -4,7 +4,8 @@
   "description": "This is the repository for team 3\r ### 1. Programming Language\r - **Selected**: JavaScript/Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "hellowword" : "node src/hellowWord.js" 
   },
   "author": "",
   "license": "ISC",
