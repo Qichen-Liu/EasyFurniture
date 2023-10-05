@@ -9,6 +9,7 @@ runs:
       with:
         node-version: 14  # Choose the Node.js version you need
     - name: Install dependencies
+      shell: bash
       run: npm install  # Install project dependencies
 
     
