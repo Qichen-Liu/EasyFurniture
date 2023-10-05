@@ -29,6 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: npm install  # Install project dependencies
       - uses: bradennapier/eslint-plus-action@v3.4.2
 
   prettier:
