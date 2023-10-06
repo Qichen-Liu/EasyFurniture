@@ -1,14 +1,21 @@
 {
     "env": {
         "node": true,
-        "es2021": true
+        "es2021": true,
+        "mocha": true
     },
     "extends": ["eslint:recommended", "plugin:node/recommended", "plugin:prettier/recommended"],
     "parserOptions": {
         "ecmaVersion": 2021,
         "sourceType": "module"
     },
+    "plugins": [
+        "prettier"
+      ],
     "rules": {
-        "prettier/prettier": "off"
+        "prettier/prettier": "off",
+        "node/no-unpublished-require": ["error", {
+            "allowModules": ["chai"]
+        }]
     }
 }
