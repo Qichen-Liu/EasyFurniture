@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "helloworld" : "node src/helloWorld.js" 
+    "helloworld": "node src/helloWorld.js",
+    "format": "prettier --write \"**/*.js\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.3.10",
+    "eslint": "7.32.0",
     "mocha": "^10.2.0",
-    "eslint": "7.32.0"
+    "prettier": "3.0.3"
   }
 }
