@@ -7,7 +7,7 @@ This is the repository for team 3
 - **Selected**: Node.js
 
 ### 3. Testing Framework
-- **Selected**: Jest
+- **Selected**: Mocha
 
 ### 4. Continuous Integration Solution
 - **Selected**: GitHub Actions
