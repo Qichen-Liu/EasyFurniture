@@ -1,5 +1,6 @@
 # team3
 [![Continuous Integration](https://github.com/Qichen-Liu/team3/actions/workflows/continues_integration.yml/badge.svg)](https://github.com/Qichen-Liu/team3/actions/workflows/continues_integration.yml) 
+  
 This is the repository for team 3
 ### 1. Programming Language
 - **Selected**: JavaScript/Node.js
