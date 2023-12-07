@@ -13,13 +13,13 @@ const PROD_CLIENT_URL = ''
 const LOCAL_DEV_CLIENT_URL = 'http://localhost:3000';
 
 // MongoDB
-const MONGODB = 'mongodb+srv://ql2326:123456Lqc@atlascluster.niwmwaj.mongodb.net/?retryWrites=true&w=majority'
+const MONGODB = 'your mongodb config'
 const DATABASE = 'loginSystem'
 
 // Google Authentication
 const GOOGLE_CALLBACK_URL = 'http://localhost:4242/api/login/auth/google/callback';
-const GOOGLE_CLIENT_ID = '631170858042-q1cuu1df52vs9dkmop1o103stfblr129.apps.googleusercontent.com';
-const GOOGLE_CLIENT_SECRET = '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';
+const GOOGLE_CLIENT_ID = 'your google client id';
+const GOOGLE_CLIENT_SECRET = 'your google secret';
 
 // Cookie Domain
 const PROD_COOKIE_DOMAIN = '';
