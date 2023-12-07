@@ -23,13 +23,12 @@ env:
   ENVIRONMENT_TYPE: continuous_integration
 
 jobs:
-
   eslint:
     name: Eslint Static Check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm install  # Install project dependencies
+      - run: npm install # Install project dependencies
       - uses: bradennapier/eslint-plus-action@v3.4.2
 
   prettier:
@@ -46,7 +45,7 @@ jobs:
   presubmit:
     name: Continuous Integration
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Code Locally
         uses: actions/checkout@v3
@@ -54,4 +53,3 @@ jobs:
         uses: ./.github/actions/prepare
       - name: Test Js
         uses: ./.github/actions/test
-  

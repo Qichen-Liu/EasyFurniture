@@ -10,6 +10,7 @@ runs:
   steps:
     - name: Run tests
       shell: bash
-      run: npm test  # Replace with your test command
+      run: npm test # Replace with your test command
+
 
     # - name: Report Coverage to Coveralls
