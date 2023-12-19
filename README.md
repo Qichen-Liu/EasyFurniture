@@ -1,83 +1,82 @@
-# team3
+# EasyFurniture - Team 3 Software Design
 
 [![Continuous Integration](https://github.com/Qichen-Liu/team3/actions/workflows/continues_integration.yml/badge.svg)](https://github.com/Qichen-Liu/team3/actions/workflows/continues_integration.yml)
 
-This is the repository for team 3
+## Project Overview
 
-### 1. Programming Language
+**EasyFurniture** is a user-friendly web application designed to facilitate the buying and selling of used furniture. Our goal is to connect individuals seeking affordable, high-quality furniture options with those looking to sell their gently-used items. This project is managed and developed by Team 3, consisting of Qichen Liu, Zhisheng Hua, Eden Wu, and Zetao Wang.
 
-- **Selected**: JavaScript/Node.js
+## Features
 
-### 2. Toolchain / Runtime Environment
+- **Responsive Design**: Adapts to smartphones, tablets, and desktops.
+- **Dynamic Routing**: Seamless navigation with React Router.
+- **Secure Authentication**: Using JWT tokens and OAuth protocols.
+- **Robust Backend**: RESTful services, Google OAuth, MongoDB integration.
+- **User-Friendly UI**: Intuitive search, filter options, and detailed listings.
+- **Advanced Security**: Data encryption, CSRF protection, and regular security audits.
 
-- **Selected**: Node.js
+## Installation
 
-### 3. Testing Framework
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Qichen-Liu/team3.git
+   cd team3
+   ```
 
-- **Selected**: Mocha
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-### 4. Continuous Integration Solution
+## Usage
 
-- **Selected**: GitHub Actions
-
-### 5. Static Analysis Solution
-
-- **Selected**: ESLint
-
-### 6. Code Formatting Solution
-
-- **Selected**: Prettier
-
-### 7. Package Manager Solution
-
-- **Selected**: npm
-
-### 8. Pre-configured Static Analysis & Code Formatting
-
-- **ESLint** and **Prettier** should be configured as strictly as possible.
-
-### 9. “Hello World” Program
-
-- `src/helloWorld.js` file:
-
-```javascript
-console.log("Hello, World!");
-```
-
-### 10. Basic Test
-
-- `test/test.js`:
-
-```javascript
-const sum = (a, b) => a + b;
-test("adds 2 + 2 to equal 4", () => {
-  expect(sum(2, 2)).toBe(4);
-});
-```
-
-### 11. License
-
-- MIT license
-
-### 12. Usage
-
-- install required modules:
+- **Start the application:**
   ```sh
-  npm install
+  npm start
   ```
-- run helloWorld.js:
-  ```sh
-  npm run helloworld
-  ```
-- run test for 2 + 2 = 4:
+  This will launch the EasyFurniture web application on your local server.
+
+- **Run tests:**
   ```sh
   npm test
   ```
-- run prettier:
-  ```sh
-  npm run format
-  ```
-- run ESlint:
-  ```sh
-  npm run lint
-  ```
+  This command runs unit and integration tests to ensure code reliability.
+
+## Requirements
+
+- **Node.js**: The runtime environment for running the application.
+- **MongoDB**: A running instance of MongoDB is required for database operations.
+- **Modern Web Browser**: Chrome, Firefox, Safari, or Edge for the best user experience.
+
+## Contributing
+
+We welcome contributions! If you're interested in helping improve EasyFurniture, please follow these steps:
+
+1. **Fork the repository.**
+2. **Create a new branch:** `git checkout -b my-new-feature`.
+3. **Make your changes and commit them:** `git commit -am 'Add some feature'`.
+4. **Push to the branch:** `git push origin my-new-feature`.
+5. **Submit a pull request.**
+
+## Security
+
+We take the security of our application seriously. If you discover any security-related issues, please email one of the team members instead of using the issue tracker.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Team Members
+
+- **Qichen Liu (ql2326)** - GitHub Repository Manager & Backend Developer
+- **Zhisheng Hua (zh2667)** - Backend Developer & Documentation
+- **Eden Wu (yfw215)** - DevOps (CI/CD) Developer & Backend Developer
+- **Zetao Wang (zw3478)** - Frontend Developer & Unit Test
+
+## Contact
+
+For any queries regarding EasyFurniture, please reach out to us through our GitHub profiles linked above.
+
+---
+
+Thank you for considering EasyFurniture for your furniture buying and selling needs! 🛋️🌟
