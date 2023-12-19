@@ -8,3 +8,11 @@ describe("Basic Math Operations", function () {
     expect(result).to.equal(4);
   });
 });
+
+const calculator = require("../src/calculator");
+
+describe("Test Calculator", function () {
+  it("should return 1", function () {
+    expect(calculator.add("1")).to.equal(1);
+  });
+});

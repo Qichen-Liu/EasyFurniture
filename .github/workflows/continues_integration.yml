@@ -21,6 +21,7 @@ concurrency:
 
 env:
   ENVIRONMENT_TYPE: continuous_integration
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   eslint:
