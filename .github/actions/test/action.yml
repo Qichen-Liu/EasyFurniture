@@ -17,7 +17,7 @@ runs:
       shell: bash
       run: npm run coverage
 
-    - name: Coveralls
-      uses: coverallsapp/github-action@v2
-      with:
-        github-token: ${{ env.GITHUB_TOKEN }}
+    # - name: Coveralls
+    #   uses: coverallsapp/github-action@v2
+    #   with:
+    #     github-token: ${{ env.GITHUB_TOKEN }}
