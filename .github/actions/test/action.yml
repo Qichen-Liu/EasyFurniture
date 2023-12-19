@@ -13,9 +13,9 @@ runs:
       run: npm test # Replace with your test command
 
 
-    - name: npm install, make test-coverage
-      shell: bash
-      run: npm run coverage
+    # - name: npm install, make test-coverage
+    #   shell: bash
+    #   run: npm run coverage
 
     # - name: Coveralls
     #   uses: coverallsapp/github-action@v2
