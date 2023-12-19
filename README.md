@@ -62,6 +62,12 @@ We welcome contributions! If you're interested in helping improve EasyFurniture,
 
 We take the security of our application seriously. If you discover any security-related issues, please email one of the team members instead of using the issue tracker.
 
+## Configuration Reminder for Google Authentication
+
+**Important**: If you are setting up this project for development or production, you need to configure Google Authentication with your own Google account credentials.
+In your project's configuration file(configs/config.js), replace the **GOOGLE_CLIENT_ID** and **GOOGLE_CLIENT_SECRET** values with the ones obtained from the Google Developer Console.
+Remember to keep your client ID secure and do not commit it to public repositories.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
