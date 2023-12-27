@@ -35,7 +35,7 @@ app.use(
 );
 
 app.use(express.json());
-app.use(express.static('views'));
+app.use(express.static("views"));
 
 // ------ SESSION & COOKIES & PASSPORT ------
 let cookieConfig = {
