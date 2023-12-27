@@ -4,8 +4,7 @@ const Schema = mongoose.Schema;
 const FurnitureSchema = new Schema(
   {
     user: {
-      type: Schema.Types.ObjectId,
-      ref: "User", // Reference to the User table
+      type: String,
       required: true,
     },
     title: {

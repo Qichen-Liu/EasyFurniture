@@ -14,7 +14,7 @@ const {
 const MongoDBStore = require("connect-mongodb-session")(session);
 
 // ------- require routes ------
-// const FurnitureRoute = require("./routes/furnitureRoute");
+const FurnitureRoute = require("./routes/furnitureRoute");
 const LoginRoute = require("./routes/loginRoute");
 
 const app = express();
@@ -35,6 +35,7 @@ app.use(
 );
 
 app.use(express.json());
+
 
 // ------ SESSION & COOKIES & PASSPORT ------
 let cookieConfig = {
@@ -66,7 +67,7 @@ app.use(passport.session());
 
 // ------- USE ROUTES ------
 app.use("/api/login", LoginRoute);
-//app.use('/api/sublease', SubleaseRoute);
+app.use('/api/furniture', FurnitureRoute);
 
 // ------START SERVER ------
 const port = process.env.PORT;

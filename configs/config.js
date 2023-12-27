@@ -13,7 +13,7 @@ const PROD_CLIENT_URL = "";
 const LOCAL_DEV_CLIENT_URL = "http://localhost:3000";
 
 // MongoDB
-const MONGODB = "your mongodb config";
+const MONGODB = "mongodb+srv://ql2326:123456Lqc@atlascluster.niwmwaj.mongodb.net/?retryWrites=true&w=majority";
 const DATABASE = "loginSystem";
 
 // Google Authentication
